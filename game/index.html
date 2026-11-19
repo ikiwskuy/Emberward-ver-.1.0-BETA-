@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberward — Keep the Last Light</title>
+<link rel="icon" href="data:,">
+<style>
+:root{
+--ew-cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M6 2 L6 26 L12.5 20.5 L16 28 L19 26.8 L15.5 19 L24 19 Z' fill='%23ff9d5c' opacity='0.45' stroke='%23ff9d5c' stroke-width='5' stroke-linejoin='round'/><path d='M6 2 L6 26 L12.5 20.5 L16 28 L19 26.8 L15.5 19 L24 19 Z' fill='%23ffcf6e' stroke='%232a1608' stroke-width='1.6' stroke-linejoin='round'/></svg>") 5 1, default;
+--ew-cursor-pointer: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M6 2 L6 26 L12.5 20.5 L16 28 L19 26.8 L15.5 19 L24 19 Z' fill='%23ff9d5c' opacity='0.65' stroke='%23ff9d5c' stroke-width='6' stroke-linejoin='round'/><path d='M6 2 L6 26 L12.5 20.5 L16 28 L19 26.8 L15.5 19 L24 19 Z' fill='%23ffe9a8' stroke='%232a1608' stroke-width='1.6' stroke-linejoin='round'/></svg>") 5 1, pointer;
+}
+html,body{margin:0;padding:0;height:100%;background:#07060f;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 90% at 50% 30%, #141033 0%, #0a0820 55%, #05040c 100%);font-family:Georgia,'Times New Roman',serif;cursor:var(--ew-cursor)}
+#stage{position:relative;width:min(100vw, calc(100vh * 16 / 9));aspect-ratio:16 / 9}
+canvas{display:block;image-rendering:pixelated;touch-action:none;width:100%;height:100%;border-radius:6px;box-shadow:0 0 0 1px rgba(255,215,130,0.25), 0 0 64px rgba(94,64,200,0.35), 0 24px 80px rgba(0,0,0,0.8);cursor:var(--ew-cursor)}
+</style>
+</head>
+<body>
+<div id="stage">
+<canvas id="game" width="1280" height="720"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
